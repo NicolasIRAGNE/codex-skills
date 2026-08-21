@@ -1,4 +1,4 @@
 interface:
   display_name: "Report GitHub Issues"
   short_description: "Report unrelated findings without scope creep"
-  default_prompt: "Use $report-github-issues to draft an unrelated finding as a concise, labeled GitHub issue or comment, get my approval, then publish it."
+  default_prompt: "Use $report-github-issues to draft proposed GitHub issues or comments as temporary Markdown files, let me approve or reject each one, then publish only the approved files."
