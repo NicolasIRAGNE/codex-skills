@@ -1,0 +1,4 @@
+interface:
+  display_name: "Report GitHub Issues"
+  short_description: "Report unrelated findings without scope creep"
+  default_prompt: "Use $report-github-issues to record an unrelated finding as a concise, labeled, clearly generated GitHub issue or comment."

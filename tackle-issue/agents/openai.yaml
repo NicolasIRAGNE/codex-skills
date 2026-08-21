@@ -1,0 +1,4 @@
+interface:
+  display_name: "Tackle Issue"
+  short_description: "Take a GitHub issue from intake to PR"
+  default_prompt: "Use $tackle-issue to select an eligible GitHub issue when none is specified, then tackle the chosen issue and publish the verified fix."

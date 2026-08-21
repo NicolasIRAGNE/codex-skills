@@ -1,0 +1,4 @@
+interface:
+  display_name: "Prepare Pull Request"
+  short_description: "Consolidate, verify, and finish pull requests"
+  default_prompt: "Use $prepare-pull-request to consolidate my branch into the smallest meaningful history, verify it, and publish or finish the pull request."
