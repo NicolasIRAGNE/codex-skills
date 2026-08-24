@@ -78,9 +78,10 @@ Produce the smallest understandable set of linear, focused, verified branches wi
 - For multiline GitHub Markdown, write the exact content to a temporary file and use the CLI's `--body-file` option. Do not pass encoded `\n` line breaks through a shell argument.
 - Read published bodies or comments back from GitHub before handoff or merge and confirm formatting, links, and image embeds. Remove temporary files afterward.
 - Use the repository's required merge method. If none is specified, choose the method that preserves the curated history and explain any material tradeoff before merging.
-- Write the PR body for a human reader. Keep it concise and organize the substance around why the change is needed and how it solves the problem. Do not add a validation section or mention validation in the PR body.
+- Write the PR body for a human reader. Keep it concise and organize the substance around why the change is needed and how it solves the problem.
+- Never add a `Verification`, `Validation`, `Tests`, `Checks`, or equivalent section to the PR body. Do not list test commands, pass counts, check results, or verification evidence there. Run the checks, but keep their evidence in the private handoff. Include the minimum required evidence only when the user explicitly asks for it or the repository mandates a non-optional PR field; an optional template heading is not a mandate.
 - Mention important design changes when there are any, and explain usage or integration only when relevant. Include only the implementation detail needed to understand the approach or review material tradeoffs.
-- Keep check results, commit hashes, branch mechanics, local worktree details, and excluded files in the final handoff unless the repository template explicitly requires them in the PR body.
+- Keep check results, commit hashes, branch mechanics, local worktree details, and excluded files in the final handoff rather than the PR body.
 - Do not merge unless the user requested it or the enclosing authorized workflow explicitly includes merge.
 
 ## 7. Clean up after merge

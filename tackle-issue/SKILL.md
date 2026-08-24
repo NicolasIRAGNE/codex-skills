@@ -44,7 +44,7 @@ Own the requested issue through submitted, reviewable pull request(s). Invoking 
 ## 5. Publish the fixing PR
 
 - Immediately before creating or updating each PR, fetch the issue conversation again, follow pagination until exhausted, and check for new comments. Incorporate new requirements or evidence; surface conflicts instead of publishing stale work.
-- Follow the repository's PR template and publishing rules. Keep the body concise and include the issue-level outcome, material risks or omissions, and stack dependencies when relevant. Let `$prepare-pull-request` govern the PR narrative and screenshot decisions.
+- Follow the repository's PR template and publishing rules. Keep the body concise and include the issue-level outcome, material risks or omissions, and stack dependencies when relevant. Never add verification, validation, tests, checks, commands, pass counts, or their results to the PR body unless the user explicitly requests them or a non-optional repository field requires the minimum necessary content. Let `$prepare-pull-request` govern the rest of the PR narrative and screenshot decisions.
 - Put each closing keyword on its own line in the PR that makes the corresponding issue complete: `Closes #<number>`.
 - For parent or meta issues, do not close the parent directly unless repository policy says that is correct. Close completed leaf issues individually and leave incomplete work open.
 - Include a closing reference exactly once across the PR set for each issue completed by the work. For an issue in another repository, use `Closes <owner>/<repo>#<number>`.
